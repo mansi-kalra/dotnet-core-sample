@@ -2,12 +2,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=vsts
 
 schedules:
-- cron: "0 0 * * *"
+- cron: "0 1 * * *"
   displayName: Daily midnight build
   branches:
     include:
     - master
-  always: true
+
 pool:
   vmImage: 'Ubuntu 16.04'
   
