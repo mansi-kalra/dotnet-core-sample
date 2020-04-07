@@ -5,10 +5,6 @@ pool:
   vmImage: 'Ubuntu 16.04'
   
 variables:
-- task: UseDotNet@2
-  inputs:
-    packageType: 'sdk'
-    version: 
   buildConfiguration: 'Release'
 
 steps:
